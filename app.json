@@ -4,11 +4,11 @@
     "slug": "panicNav",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/PanicNav_launcher.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/PanicNav_launcher.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,12 +17,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/PanicNav_launcher.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.hgraldc.panicNav"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fe4545c4-80c2-4310-be86-47b6ced10f7c"
+      }
     }
   }
 }
