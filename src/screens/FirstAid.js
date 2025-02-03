@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView, Pressable } from 'react-native';
 
 const data = [
   { id: '1', title: 'Perdarahan', image: require("../assets/images/Perdarahan.png") },
@@ -20,10 +20,10 @@ export default function FirstAid() {
     <ScrollView style={styles.container}>
       <View style={styles.list}>
         {data.map((item) => (
-          <TouchableOpacity key={item.id} style={styles.card}>
+          <Pressable key={item.id} style={styles.card}>
             <Image source={item.image} style={styles.image} />
             <Text style={styles.text}>{item.title}</Text>
-          </TouchableOpacity>
+          </Pressable>
         ))}
       </View>
     </ScrollView>

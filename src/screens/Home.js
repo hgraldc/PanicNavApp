@@ -13,8 +13,8 @@ export default function Home() {
           style={styles.profileImage}
         />
         <View>
-          <Text style={styles.name}>Wawan Santoso</Text>
-          <Text style={styles.location}>Sayung, Demak, Jawa Tengah</Text>
+          <Text style={styles.name}>Hafizh Geraldy Chandra</Text>
+          <Text style={styles.location}>Kadungmundu, Semarang, Jawa Tengah</Text>
         </View>
       </View>
 

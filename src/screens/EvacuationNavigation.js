@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, Image, StyleSheet, Alert } from "react-native";
+import { View, Text, TextInput, Image, StyleSheet, Alert, Pressable } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { Dropdown } from "react-native-element-dropdown";
@@ -72,9 +72,9 @@ export default function EvacuationNavigation() {
           onChange={item => setEvacuationSite(item.value)}
         />
 
-        <TouchableOpacity style={styles.submitButton} onPress={handleSubmit}>
+        <Pressable style={styles.submitButton} onPress={handleSubmit}>
           <Text style={styles.submitText}>Simpan</Text>
-        </TouchableOpacity>
+        </Pressable>
       </View>
     </SafeAreaView>
   );

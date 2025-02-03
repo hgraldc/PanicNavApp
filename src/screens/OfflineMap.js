@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import { AntDesign, Feather } from "@expo/vector-icons";
 
@@ -55,15 +55,15 @@ export default function OfflineMap() {
 
       {/* Buttons */}
       <View style={styles.bottomContainer}>
-        <TouchableOpacity style={styles.button} onPress={centerMap}>
+        <Pressable style={styles.button} onPress={centerMap}>
           <AntDesign name="enviromento" size={24} color="black" />
           <Text style={styles.buttonText}>Pusatkan</Text>
-        </TouchableOpacity>
+        </Pressable>
 
-        <TouchableOpacity style={styles.button}>
+        <Pressable style={styles.button}>
           <Feather name="volume-2" size={24} color="black" />
           <Text style={styles.buttonText}>Bunyikan</Text>
-        </TouchableOpacity>
+        </Pressable>
       </View>
     </View>
   );

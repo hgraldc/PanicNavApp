@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 import { Audio } from "expo-av";
 import { FontAwesome, MaterialIcons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -39,10 +39,10 @@ const DangerWarning = () => {
 
       {/* Tombol untuk Bunyi Notifikasi */}
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={playNotificationSound}>
+        <Pressable style={styles.button} onPress={playNotificationSound}>
           <FontAwesome name="bell" size={32} color="black" />
           <Text style={styles.buttonText}>Bunyikan Notifikasi</Text>
-        </TouchableOpacity>
+        </Pressable>
       </View>
     </SafeAreaView>
   );
