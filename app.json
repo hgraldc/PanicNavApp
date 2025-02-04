@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "panicNav",
+    "name": "PanicNav",
     "slug": "panicNav",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,14 +13,21 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to display the map"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/PanicNav_launcher.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.hgraldc.panicNav"
+      "package": "com.hgraldc.panicNav",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
